@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QCM SOLID</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="quiz-wrapper">
+      <header class="quiz-header">
+        <h1>QCM sur les principes SOLID</h1>
+        <p class="quiz-subtitle">Testez vos connaissances sur la conception orientée objet</p>
+        <div class="progress-bar" aria-hidden="true">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="progress-text" id="progress-text" aria-live="polite"></p>
+      </header>
+
+      <section class="card" id="quiz-card" aria-live="polite"></section>
+
+      <section class="result-card hidden" id="result-card">
+        <h2>Résultat</h2>
+        <p class="score-text" id="score-text"></p>
+        <p id="score-message"></p>
+        <button type="button" class="btn btn-primary" id="restart-btn">Recommencer le QCM</button>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
